@@ -1,13 +1,10 @@
-Millions, maybe billions of lines of code are written every day, and each developer has his/her own way of writing.
-Existence of a set of conventions is a *good to have* for developers community, but it's a **must to have** for each team.
-These are just some conventions we set for our team.
-
-> Each commit should do just **one** task.
-
 ## Format of the commit message:
+
 ```bash
-<type>(<scope>){<ID>}: <subject>
+<type>(<scope>): <subject>
 ```
+
+> Consider each commit should do just **one** task.
 
 #### Allowed `<type>` values:
 
@@ -25,24 +22,22 @@ These are just some conventions we set for our team.
 * **layout**  layout
 * **comp**  component
 * **imp**  implementation
-* **WIP** work in progress:  mixture of two or more than above scopes
+* **mix** mixture:  mixture of two or more than above scopes
 
 
 > The subject cannot be longer than 72 characters. It must be in simple present tens always (e.g. fixes, adds and so on).
 
-> The `<ID>` can be empty (e.g. if the change isn't assign to a JIRA task ), in which case the curly braces are omitted. type and scope should always be lowercase as shown in the example below.
+>  type and scope should always be lowercase as shown in the example below.
 
-> The `<scope>` can be empty too, in which case the parentheses are omitted.
+> The `<scope>` can be empty, in which case the parentheses are omitted.
 
-> Don't use **WIP** scope until it really be necessary.
+> Don't use **mix** scope until it really be necessary.
 
 ## Example commit message:
 
 ```
-fix(infra){#21}: configs eslint
+fix(infra): configs eslint
 ```
-
-
 
 This document is based on [Angular Commit Message Format]. See the [commit history] for examples of properly-formatted commit messages.
 
