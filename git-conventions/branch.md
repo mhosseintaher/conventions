@@ -29,6 +29,7 @@
  - **release**: A branch for tagging a specific release version.
  
  - **merging**: A temporary branch for resolving merge conflicts, usually between the latest development and a feature or Hotfix branch. This can also be used if two branches of a feature being worked on by multiple developers need to be merged, verified and finalized.
+ - **review**: A branch for reviewing older branches and fix errors.
 
 
 ## Format of the branch name:
@@ -41,13 +42,15 @@
 
 > The `<subject>` must be short and rational.
 
+> If `<subject` be more than 1 word we must separate it by underscore(_).
+
 ## Examples:
 
 ```
 alireza-feature-toast-23
-taher-merge-device-support-35
-alireza-bugfix-more-gray-shades
-taher-hotfix-scaling-threshold
+taher-merge-device_support-35
+alireza-bugfix-more_gray_shades
+taher-hotfix-scaling_threshold
 ```
 
 This document is based on [Git Branch Naming Convention](https://dev.to/couchcamote/git-branching-name-convention-cch).
